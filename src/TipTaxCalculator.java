@@ -26,15 +26,15 @@ public class TipTaxCalculator {
     }
     //methods
     public static double calculatetax(double bill, double taxrate) {
-        return bill * (taxrate / 100);
+        return bill * (taxrate / 100.);
     }
     public static double calculatetip(double bill,double tiprate) {
-        return bill * (tiprate / 100);
+        return bill * (tiprate / 100.);
     }
         public static double calculatetotal(double bill, double tax, double tip) {
             return bill + tax + tip;
         }
-        public static long totaltoround(double roundedtotal) {
+        public static double totaltoround(double roundedtotal) {
             return  Math.round(roundedtotal);
             }
         }
